@@ -8,4 +8,4 @@
 
 TS中文文档：[TypeScript](http://www.tslang.cn/docs/tutorial.html)
 
-纠错邮箱:zb_buctwbzs@163.com
+纠错邮箱:zh_buctwbzs@163.com
