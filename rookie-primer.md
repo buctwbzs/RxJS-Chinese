@@ -1,4 +1,5 @@
-_本篇对应于官方的介绍篇，因英文介绍与gitbook文件名冲突，所以改了一下_
+_
+本篇对应于官方的介绍篇，因英文介绍与gitbook文件名冲突，所以改了一下_
 
 
 RxJS是一个通过使用可观察序列来构建**异步**和**基于事**件的程序的库。它提供了一个核心类型:**Observable**、卫星类型(大概是这些类型均围绕于Observable，也就是Observable是根基，而这些是辅助类型):**Observer**、**Schedulers**、**Subjects**)和操作符-衍生自一些数组方法，使得我们可以把异步事件以集合的方式进行处理。
@@ -91,16 +92,16 @@ Rx.Observable.fromEvent(button, 'click')
 
 
 ```
-
 var count = 0;
 var rate = 1000;
 var lastClick = Date.now() - rate;
 var button = document.querySelector('button');
 button.addEventListener('click', (event) => {
-if (Date.now() - lastClick >= rate) {
-console.log(++count + event.clientX)
-lastClick = Date.now();
-}
+  if (Date.now() - lastClick >= rate) {
+    count += event.clientX;
+    console.log(count)
+    lastClick = Date.now();
+  }
 });
 ```
 
